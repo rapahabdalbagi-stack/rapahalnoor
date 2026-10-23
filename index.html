@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>أهلًا بك | أثر الأدب</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f5ee;
+        }
+
+        .welcome-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .welcome-card {
+            width: 100%;
+            max-width: 420px;
+            padding: 30px 25px;
+            box-sizing: border-box;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .welcome-symbol {
+            font-size: 55px;
+            color: #c5a15b;
+        }
+
+        .welcome-card h1 {
+            color: #244b3c;
+            font-size: 30px;
+        }
+
+        .welcome-text {
+            color: #666;
+            line-height: 1.9;
+            margin-bottom: 25px;
+        }
+
+        .welcome-card label {
+            display: block;
+            text-align: right;
+            color: #244b3c;
+            margin: 15px 0 8px;
+            font-weight: bold;
+        }
+
+        .welcome-card input {
+            width: 100%;
+            padding: 13px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .welcome-button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #244b3c;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .welcome-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #9b7835;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="welcome-page">
+
+        <section class="welcome-card">
+
+            <div class="welcome-symbol">❝</div>
+
+            <h1>أهلًا بك في أثر الأدب</h1>
+
+            <p class="welcome-text">
+                مرحبًا بك في عالم الشعر والأدب،
+                حيث تعيش الحروف وتبقى المعاني.
+                <br>
+                سجّل الدخول واكتشف جمال الكلمة.
+            </p>
+
+            <form id="welcome-login">
+
+                <label for="email">البريد الإلكتروني</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="أدخل بريدك الإلكتروني"
+                    required
+                >
+
+                <label for="password">كلمة المرور</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="أدخل كلمة المرور"
+                    required
+                >
+
+                <button class="welcome-button" type="submit">
+                    تسجيل الدخول
+                </button>
+
+            </form>
+
+            <a class="welcome-link" href="register.html">
+                إنشاء حساب جديد
+            </a>
+
+        </section>
+
+    </main>
+
+    <script>
+        document.getElementById("welcome-login")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+                window.location.href = "home.html";
+            });
+    </script>
+
+</body>
+</html>
