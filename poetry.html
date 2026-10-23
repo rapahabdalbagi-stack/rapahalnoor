@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="اكتشف جمال الشعر العربي وأبيات الحكمة والغزل والفخر في موقع أثر الأدب.">
+
+    <title>الشعر العربي | أثر الأدب</title>
+
+    <!-- ملف التنسيق -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ملف JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- رأس الموقع -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            أثر <span>الأدب</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="فتح القائمة"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav">
+
+            <a href="index.html">الرئيسية</a>
+
+            <a href="poetry.html" class="active">الشعر</a>
+
+            <a href="literature.html">الأدب والخواطر</a>
+
+            <a href="writers.html">الشعراء والأدباء</a>
+
+            <a href="about.html">من نحن</a>
+
+        </nav>
+
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+
+        <!-- مقدمة صفحة الشعر -->
+        <section class="page-banner">
+
+            <p class="subtitle">ديوان اللغة العربية</p>
+
+            <h1>الشعر العربي</h1>
+
+            <p>
+                بين جمال الكلمات وعمق المعاني،
+                نكتشف روعة الشعر العربي عبر العصور.
+            </p>
+
+        </section>
+
+        <!-- قسم القصائد -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="subtitle">من روائع الشعر</p>
+
+                <h2>أبيات خالدة</h2>
+
+                <p>
+                    مجموعة من الأبيات الشعرية في الحكمة
+                    والفخر والتأمل وجمال اللغة.
+                </p>
+
+            </div>
+
+            <!-- مربع البحث -->
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="poetry-search"
+                    placeholder="ابحث عن شاعر أو بيت شعري..."
+                    aria-label="البحث عن شاعر أو بيت شعري"
+                >
+
+            </div>
+
+            <!-- بطاقات الشعر -->
+            <div class="poetry-grid">
+
+                <!-- القصيدة الأولى -->
+                <article class="poem-card searchable">
+
+                    <span class="tag">الحكمة</span>
+
+                    <h2>الإمام الشافعي</h2>
+
+                    <blockquote>
+                        دع الأيام تفعل ما تشاء<br>
+                        وطب نفسًا إذا حكم القضاء
+                    </blockquote>
+
+                    <p class="poem-note">
+                        أبيات مشهورة في الصبر والرضا.
+                    </p>
+
+                    <button type="button" class="copy-btn">
+                        نسخ الأبيات
+                    </button>
+
+                </article>
+
+                <!-- القصيدة الثانية -->
+                <article class="poem-card searchable">
+
+                    <span class="tag">الفخر والعزيمة</span>
+
+                    <h2>المتنبي</h2>
+
+                    <blockquote>
+                        على قدر أهل العزم تأتي العزائم<br>
+                        وتأتي على قدر الكرام المكارم
+                    </blockquote>
+
+                    <p class="poem-note">
+                        أبيات تعبّر عن العزم والهمة.
+                    </p>
+
+                    <button type="button" class="copy-btn">
+                        نسخ الأبيات
+                    </button>
+
+                </article>
+
+                <!-- القصيدة الثالثة -->
+                <article class="poem-card searchable">
+
+                    <span class="tag">التأمل</span>
+
+                    <h2>أبو العتاهية</h2>
+
+                    <blockquote>
+                        ألا ليت الشباب يعود يومًا<br>
+                        فأخبره بما فعل المشيب
+                    </blockquote>
+
+                    <p class="poem-note">
+                        بيت مشهور عن مرور الزمن والشباب.
+                    </p>
+
+                    <button type="button" class="copy-btn">
+                        نسخ الأبيات
+                    </button>
+
+                </article>
+
+                <!-- القصيدة الرابعة -->
+                <article class="poem-card searchable">
+
+                    <span class="tag">اللغة العربية</span>
+
+                    <h2>حافظ إبراهيم</h2>
+
+                    <blockquote>
+                        أنا البحر في أحشائه الدر كامن<br>
+                        فهل سألوا الغواص عن صدفاتي
+                    </blockquote>
+
+                    <p class="poem-note">
+                        من قصيدة اللغة العربية تتحدث عن نفسها.
+                    </p>
+
+                    <button type="button" class="copy-btn">
+                        نسخ الأبيات
+                    </button>
+
+                </article>
+
+            </div>
+
+            <!-- رسالة عدم وجود نتائج -->
+            <p id="no-results" class="empty-message" hidden>
+                لا توجد نتائج مطابقة للبحث.
+            </p>
+
+        </section>
+
+        <!-- دعوة للانتقال إلى بقية الأقسام -->
+        <section class="section closing-section">
+
+            <h2>الشعر بداية رحلة في عالم الأدب.</h2>
+
+            <p>
+                اكتشف المزيد من الخواطر والنصوص الأدبية.
+            </p>
+
+            <a href="literature.html" class="btn">
+                انتقل إلى الأدب والخواطر
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- تذييل الموقع -->
+    <footer class="footer">
+
+        <p>
+            © <span class="year"></span>
+            أثر الأدب — مساحة للثقافة والجمال.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
